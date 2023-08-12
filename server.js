@@ -77,7 +77,6 @@ app.get ("/people", async (req, res) => {
 });
 
 // CREATE - POST -- /people -- create a new person
-
 app.post ("/people", async (req, res) => {
     try {
         // create the new person
@@ -101,7 +100,7 @@ app.get("/people/:id", async (req, res) => {
         }
 });
 
-// UPDATE- PUT - /people.:id - update a single person
+// UPDATE- PUT - /people/:id - update a single person
 app.put("/people/:id", async (req, res) => {
     try {
         // update person
